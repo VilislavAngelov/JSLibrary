@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="btn-container">
+      <dialog>
+        <button autofocus>Close</button>
+        <form id="bookForm" action="">
+          <label for="title">Book's Title:</label>
+          <input type="text" name="title" id="title" />
+
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" />
+
+          <label for="pagesNum">Number of pages</label>
+          <input type="number" name="pagesNum" id="pagesNum" />
+
+          <fieldset>
+            <legend>Have you read the book?</legend>
+
+            <label for="readTrue">Yes</label>
+            <input type="radio" name="readTrue" id="readTrue" value="True" />
+
+            <label for="readFalse">No</label>
+            <input type="radio" name="readFalse" id="readFalse" value="False" />
+          </fieldset>
+          <button id="bookSubmit" type="submit">Confirm</button>
+        </form>
+      </dialog>
+      <button class="addBook">Add Book</button>
+    </div>
+    <div class="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
